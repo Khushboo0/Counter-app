@@ -1,19 +1,13 @@
 import React from 'react';
 import './App.css';
-import Counter from './counter';
-import useCounter from './useCounter';
-import Button from './Button';
+import Counter from './counter'
 
-function App() {
-  const { count, increase, decrease } = useCounter(0);
-
-  return (
-    <div className="App">
-      <Counter count={count} />
-      <Button onClick={increase}>Increase</Button>
-      <Button onClick={decrease}>Decrease</Button>
+const App =()=>{
+  return(
+    <div className='App'>
+      <Counter/>
     </div>
-  );
+  )
 }
 
 export default App;
